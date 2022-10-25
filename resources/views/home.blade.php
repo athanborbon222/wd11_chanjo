@@ -1,10 +1,16 @@
-@extends('layouts.app')
+@extends('pagelayout.app')
 
-@section('content')
+@section('pagecontent')
+<div class="conatiner">
+    <div class="banner">
+      <img src="./Images/Banner.png" alt=""  class="w-100"/>
+    </div>
+  </div>
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card mt-5">
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
                 <div class="card-body">
