@@ -12,5 +12,25 @@ class DashboardController extends Controller
     
         return view('admin.dashboard');
     }
+
+    public function product(){
+    
+        return view('admin.product');
+    }
+
+    public function StoreManagement(){
+    
+        return view('admin.StoreManagement');
+    }
+
+     public function ManagePage(){
+    
+        return view('admin.ManagePage');
+    }
+
+     public function reports(){
+    
+        return view('admin.reports');
+    }
    
 }

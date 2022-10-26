@@ -28,7 +28,12 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 //route  for admin middleware
 Route::prefix('admin')->middleware(['auth', 'isAdmin'])->group(function(){
    Route::get('/dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index']);
+   
 });
+Route::get('/product', [App\Http\Controllers\Admin\DashboardController::class, 'product']);
+Route::get('/StoreManagement', [App\Http\Controllers\Admin\DashboardController::class, 'StoreManagement']);
+Route::get('/ManagePage', [App\Http\Controllers\Admin\DashboardController::class, 'ManagePage']); 
+Route::get('/reports', [App\Http\Controllers\Admin\DashboardController::class, 'reports']);
  
 //route for Store image (Robinson, Sm, SNR) 
 Route::get('/add-image', [StoreImageController::class, 'create'])->name('image.add');

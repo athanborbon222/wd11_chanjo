@@ -90,30 +90,30 @@
           <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
             <i class="fas fa-chart-line me-2"></i>Analytics</a>
           <a
-            href="#"
+            href="/reports"
             class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
             ><i class="fas fa-paperclip me-2"></i>Reports</a
           >
           <a
-            href="#"
+            href="/StoreManagement"
             class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
             ><i class="fas fa-shopping-cart me-2"></i>Store Mng</a
           >
           <a
-            href="#"
+            href="/product"
             class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
             ><i class="fas fa-gift me-2"></i>Products</a
           >
-          <a
-            href="#"
+          {{-- <a
+            href=""
             class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
-            ><i class="fas fa-comment-dots me-2"></i>Chat</a
-          >
+            ><i class="fas fa-comment-dots me-2"></i>Contact Us</a
+          > --}}
 
           <a
-            href="#"
-            class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"
-            ><i class="fas fa-power-off me-2"></i>Logout</a
+            href="/ManagePage"
+            class="list-group-item list-group-item-action bg-transparent text-dark fw-bold"
+            ><i class="fa-solid fa-file"></i>  Manage Pages</a
           >
         </div>
       </div>
