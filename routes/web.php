@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\StoreImageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,6 +38,7 @@ Route::get('/reports', [App\Http\Controllers\Admin\DashboardController::class, '
  
 //route for Store image (Robinson, Sm, SNR) 
 Route::get('/add-image', [StoreImageController::class, 'create'])->name('image.add');
-Route::get('/store-image', [StoreImageController::class, 'create'])->name('image.store');
-Route::get('/show-image', [StoreImageController::class, 'create'])->name('image.show');
-Route::get('/delete-image', [StoreImageController::class, 'create'])->name('image.delete');
+Route::post('/store-image', [StoreImageController::class, 'store'])->name('image.store');
+Route::get('/StoreManagement', [StoreImageController::class, 'show'])->name('image.show');
+Route::get('/delete-image', [StoreImageController::class, 'delete'])->name('image.delete');
+
