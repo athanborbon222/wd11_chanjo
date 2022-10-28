@@ -100,7 +100,7 @@
             ><i class="fas fa-shopping-cart me-2"></i>Store Mng</a
           >
           <a
-            href="/product"
+            href="/products"
             class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
             ><i class="fas fa-gift me-2"></i>Products</a
           >

@@ -31,6 +31,10 @@ Route::prefix('admin')->middleware(['auth', 'isAdmin'])->group(function(){
    Route::get('/dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index']);
    
 });
+//navbar
+Route::get('/cart', [App\Http\Controllers\PagesController::class, 'cart']);
+Route::get('/contactus', [App\Http\Controllers\PagesController::class, 'contactus']);
+// Route::get('/products', [App\Http\Controllers\PagesController::class, 'products']);
 
 //sidebar
 Route::get('/product', [App\Http\Controllers\Admin\DashboardController::class, 'product']);
