@@ -1,4 +1,33 @@
-.navbar{
-  background-color: aquamarine;  
-  box-shadow: 0px 2px 1px black;
+.navbar {
+    background-color: aquamarine;
+    box-shadow: 0px 2px 1px black;
+}
+.terms {
+    box-sizing: border-box;
+}
+
+.terms h2 {
+    font: 24px/34px Poppins-SemiBold, sans-serif;
+    font-weight: bold;
+}
+
+.terms p {
+    font: 400 14px/21px Poppins-Regular, sans-serif;
+
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 0px 0px 25px;
+}
+.privacy p {
+    font: 400 14px/21px Poppins-Regular, sans-serif;
+
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 0px 0px 25px;
 }

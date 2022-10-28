@@ -12,10 +12,17 @@
       <!-- Fonts -->
       <link rel="dns-prefetch" href="//fonts.gstatic.com">
       <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+       <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+      
   
       <!-- Scripts -->
+    
       <link  href="{{asset('build/assets/app.css')}}" rel="stylesheet" >
       <link rel="stylesheet" href="{{asset('css/style.css')}}"/>
+      
       @vite(['resources/sass/app.scss', 'resources/js/app.js'])
   </head>
   <body>
@@ -76,9 +83,107 @@
   
     
       
-  <div>
+  
+   <div>
       @yield('pagecontent')
   </div>
+
+   <!-- Footer -->
+
+    <footer class="pt-3 text-primary bg-info">
+      <div class="row g-0">
+        <div
+          class="col-md-3 col-12 text-center text-white order-2 ps-3 border-end border-dark"
+        >
+          <h5 class="display-5 fw-bold">Discover</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a
+                href="/products"
+                class="nav-link p-0 text-dark fs-4 fw-semibold"
+                >Products</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-12 text-center order-3 border-end border-dark">
+          <h5 class="text-primary text-white display-5 fw-bold">About</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a
+                href="/aboutus"
+                class="nav-link p-0 text-dark fs-5 fw-semibold"
+                >About us</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="faqs"
+                class="nav-link p-0 text-dark fs-5 fw-semibold"
+                >FAQ</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="../contact us.html"
+                class="nav-link p-0 text-dark fs-5 fw-semibold"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-12 text-center order-4 border-end border-dark">
+          <h5 class="text-primary text-white display-5 fw-bold">More</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="/termsconditions" class="nav-link p-0 text-dark fs-4 fw-semibold">
+                Terms & Conditions
+              </a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="/privacypolicy" class="nav-link p-0 text-dark fs-4 fw-semibold">
+                Privacy Policy
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="col-md-3 col-12 text-white d-flex justify-content-center order-1 order-md-last"
+        >
+          <img src="../Images/LOGO2.png" alt="" />
+        </div>
+      </div>
+
+      <div
+        class="d-flex flex-md-row flex-column justify-content-between py-4 mt-4 px-5 mx-0 border-1 border-top border-dark bg-primary w-100"
+      >
+        <h4 class="text-white text-center align-self-center fw-semibold">
+          © CH●AN●JO. ALL RIGHTS RESERVED
+        </h4>
+        <ul
+          class="list-unstyled d-flex fs-2 gap-md-4 d-flex justify-content-center"
+        >
+          <li class="ms-3 text-center align-self-center text-white">
+            <h4 class="d-none d-sm-block">FOLLOW US</h4>
+          </li>
+          <li class="ms-3">
+            <a class="text-dark" href="#"><i class="bi bi-instagram"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-dark" href="#"><i class="bi bi-twitter"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-dark" href="#"><i class="bi bi-facebook"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Footer -->
+    
 
   
 </body>
