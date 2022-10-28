@@ -58,3 +58,6 @@ Route::get('/StoreManagement', [StoreImageController::class, 'show'])->name('ima
 
 Route::resource('products', 'App\Http\Controllers\ProductController');
 
+
+
+Route::get('userproducts/productsindex', 'App\Http\Controllers\PagesController@productsindex');
