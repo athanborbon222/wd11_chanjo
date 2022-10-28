@@ -54,7 +54,7 @@
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown me-5">
             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-            {{ Auth::user()->name }}</a>
+            {{Auth::user()->name}}</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Profile</a></li>
               <li><a class="dropdown-item" href="#">Settings</a></li>
@@ -120,9 +120,9 @@
       <!-- /#sidebar-wrapper -->
 
       <!-- Page Content -->
-      <div>
-   @yield('content')
-      </div>
+      <div class="container-fluid">
+  
+     @yield('content')
    
       </div>
 

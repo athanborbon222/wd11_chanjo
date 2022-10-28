@@ -40,5 +40,9 @@ Route::get('/reports', [App\Http\Controllers\Admin\DashboardController::class, '
 Route::get('/add-image', [StoreImageController::class, 'create'])->name('image.add');
 Route::post('/store-image', [StoreImageController::class, 'store'])->name('image.store');
 Route::get('/StoreManagement', [StoreImageController::class, 'show'])->name('image.show');
-Route::get('/delete-image', [StoreImageController::class, 'delete'])->name('image.delete');
+
+
+
+
+Route::resource('products', 'App\Http\Controllers\ProductController');
 
