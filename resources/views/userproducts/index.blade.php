@@ -1,5 +1,10 @@
 @extends('pagelayout.app')
+
 @section('pagecontent')
+<h1 class="text-warning ms-5 mt-5">Products</h1>
+
+<div class="d-flex  justify-content-around flex-wrap">
+
 @foreach ($products as $proditem)
     
 
@@ -10,10 +15,11 @@
     </div>
     <div class="card-footer">
     <p>Price: {{$proditem->productPrice}}</p>
-    <a href="/products/{{$proditem->id}}" class="btn btn-warning text-light"> View Product </a>
     </div>
     </div>
 
 @endforeach
 </div>
+
+
 @endsection

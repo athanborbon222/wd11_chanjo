@@ -30,4 +30,5 @@ class PagesController extends Controller
      public function privacypolicy(){
         return view('pages.privacypolicy');
     }
+
 }
