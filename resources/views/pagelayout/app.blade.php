@@ -99,7 +99,7 @@
           <ul class="nav flex-column">
             <li class="nav-item mb-2">
               <a
-                href="/products"
+                href="/userproducts/index"
                 class="nav-link p-0 text-dark fs-4 fw-semibold"
                 >Products</a
               >
