@@ -31,4 +31,11 @@ class PagesController extends Controller
         return view('pages.privacypolicy');
     }
 
+     public function cart(){
+        return view('pages.cart');
+    }
+    
+    public function contactus(){
+        return view('pages.contactus');
+    }
 }

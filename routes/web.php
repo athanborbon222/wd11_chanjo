@@ -38,6 +38,10 @@ Route::controller(App\Http\Controllers\Admin\UserController::class)->group(funct
 });
    
 });
+//navbar
+Route::get('/cart', [App\Http\Controllers\PagesController::class, 'cart']);
+Route::get('/contactus', [App\Http\Controllers\PagesController::class, 'contactus']);
+// Route::get('/products', [App\Http\Controllers\PagesController::class, 'products']);
 
 
 
