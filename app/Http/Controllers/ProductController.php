@@ -83,6 +83,8 @@ class ProductController extends Controller
     public function edit($id)
     {
         //
+        $updateProduct = Products::find($id);
+        return view('products.edit')->with('product', $updateProduct);
     }
 
     /**
@@ -107,6 +109,8 @@ class ProductController extends Controller
     public function destroy($id)
     {
         //
+        Products::destroy($id);
+        return redirect('products');
     }
 }
 

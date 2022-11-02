@@ -28,7 +28,7 @@
 
   <div id="page-content-wrapper">
     <nav
-      class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4"
+      class="navbar navbar-expand-lg bg-dark text-light  py-4 px-4"
     >
       <div class="d-flex align-items-center">
         <i
@@ -53,7 +53,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown me-5">
-            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+            <a id="navbarDropdown" class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
             {{Auth::user()->name}}</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Profile</a></li>
@@ -75,7 +75,7 @@
   
 <div class="d-flex" id="wrapper">
       <!-- Sidebar -->
-      <div class="bg-white" id="sidebar-wrapper">
+      <div class="bg-dark" id="sidebar-wrapper">
         <div
           class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom"
         >
@@ -100,7 +100,7 @@
             ><i class="fas fa-shopping-cart me-2"></i>Store Mng</a
           >
           <a
-            href="/product"
+            href="/products"
             class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
             ><i class="fas fa-gift me-2"></i>Products</a
           >

@@ -11,8 +11,13 @@
     <p>Date Added:{{$product->created_at}} </p>
     </div>
     <div class="card-footer d-flex justify-content-between">
-    <a href="" class="btn btn-warning bg-light text-warning"> Edit </a>
-    <a href="" class="btn btn-danger bg-light text-danger"> Delete </a>
+    <a href="/products/{{$product->id}}/edit" class="btn btn-warning bg-light text-warning"> Edit </a>
+
+    <form action="/products/{{$product->id}}" method="post">
+        {{method_field('DELETE')}}
+        {!! csrf_field() !!}
+       <input type="submit" class="btn btn-danger w-100" value="Delete">
+        </form>
     </div>
 </div>
 </div>
