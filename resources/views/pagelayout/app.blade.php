@@ -155,22 +155,22 @@
 
       <!-- Footer -->
 
-      <footer style="background-color: aquamarine" class="pt-3 text-primary">
-        <div class="row g-0">
-          <div
-            class="col-md-3 col-12 text-center text-white order-2 ps-3 border-end border-dark"
-          >
-            <h5 class="display-5 ">Discover</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2">
-                <a
-                  href=""
-                  class="nav-link p-0 text-dark fs-4 fw-semibold"
-                  >Products</a
-                >
-              </li>
-            </ul>
-          </div>
+    <footer class="pt-3 text-primary bg-info">
+      <div class="row g-0">
+        <div
+          class="col-md-3 col-12 text-center text-white order-2 ps-3 border-end border-dark"
+        >
+          <h5 class="display-5 fw-bold">Discover</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a
+                href="/userproducts/index"
+                class="nav-link p-0 text-dark fs-4 fw-semibold"
+                >Products</a
+              >
+            </li>
+          </ul>
+        </div>
 
           <div
             class="col-md-3 col-12 text-center order-3 border-end border-dark"

@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StoreImageController;
+use App\Http\Controllers\UserProductsController;
+use App\Http\Controllers\Admin\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,13 +30,31 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 //route  for admin middleware
 Route::prefix('admin')->middleware(['auth', 'isAdmin'])->group(function(){
-   Route::get('/dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index']);
+
+Route::get('/dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index']);
+   
+Route::controller(App\Http\Controllers\Admin\UserController::class)->group(function(){
+      Route::get('/users', 'index');
+});
    
 });
 //navbar
 Route::get('/cart', [App\Http\Controllers\PagesController::class, 'cart']);
 Route::get('/contactus', [App\Http\Controllers\PagesController::class, 'contactus']);
 // Route::get('/products', [App\Http\Controllers\PagesController::class, 'products']);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //sidebar
 Route::get('/product', [App\Http\Controllers\Admin\DashboardController::class, 'product']);
@@ -59,5 +79,4 @@ Route::get('/StoreManagement', [StoreImageController::class, 'show'])->name('ima
 Route::resource('products', 'App\Http\Controllers\ProductController');
 
 
-
-Route::get('userproducts/productsindex', 'App\Http\Controllers\PagesController@productsindex');
+Route::get('/userproducts/index', [UserProductsController::class, 'show'])->name('userproducts.show');
