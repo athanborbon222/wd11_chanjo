@@ -31,7 +31,7 @@
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label>Name</label>
-                                        <input type="text" name="name" value="{{ Auth::user()->email }}" class="form-control">
+                                        <input type="text" name="name" value="{{ Auth::user()->name }}" class="form-control">
                                     </div>
                                 </div>
 
