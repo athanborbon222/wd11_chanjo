@@ -35,6 +35,12 @@ Route::get('/dashboard', [App\Http\Controllers\Admin\DashboardController::class,
    
 Route::controller(App\Http\Controllers\Admin\UserController::class)->group(function(){
       Route::get('/users', 'index');
+      Route::get('/users/create', 'create');
+      Route::post('/users', 'store');
+      Route::get('/users/{user_id}/edit', 'edit');
+      Route::put('users/{user_id}', 'update');
+      Route::get('/users/{user_id}/delete', 'destroy');
+
 });
    
 });
@@ -68,6 +74,7 @@ Route::get('/faqs', [App\Http\Controllers\PagesController::class, 'faqs']);
 Route::get('/products', [App\Http\Controllers\PagesController::class, 'products']);
 Route::get('/termsconditions', [App\Http\Controllers\PagesController::class, 'termsconditions']);
 Route::get('/privacypolicy', [App\Http\Controllers\PagesController::class, 'privacypolicy']);
+
 //route for Store imagproductsobinson, Sm, SNR) 
 Route::get('/add-image', [StoreImageController::class, 'create'])->name('image.add');
 Route::post('/store-image', [StoreImageController::class, 'store'])->name('image.store');

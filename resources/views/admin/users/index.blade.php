@@ -3,8 +3,13 @@
 
 
 <div class="d-flex flex-row my-5 px-5 flex-wrap">
+    <div class="col-md-12">
+        @if(session('message'))
+        <h5 class="alert alert-warning text-success">{{session('message')}}</h5>
+        @endif
+    </div>
+<a href="{{ url('admin/users/create') }}" class="btn btn-success bg-white text-success my-1 float-end">Create User</a>
 <div class="col-sm-12">
-
     <div class="card">
      <div class="card-header"> <h3 class="fs-4 mb-3">Users List</h3></div>   
    
@@ -18,6 +23,7 @@
             <th scope="col">Email</th>
             <th scope="col">Name</th>
             <th scope="col">Role</th>
+            <th scope="col">Action</th>
            
           </tr>
         </thead>
@@ -29,9 +35,9 @@
                         <td>{{$user->email}}</td>
                         <td>
                             @if($user->role_as == '0')
-                                 <label for="badge btn-warning">user</label>
+                                 <label for="badge btn-warning" class="bg-secondary px-2 rounded">User &nbsp;&nbsp;</label>
                             @elseif($user->role_as == '1')
-                                <label for="badge btn-info">Admin</label>
+                                <label for="badge btn-info" class="bg-success px-2 rounded">Admin</label>
                             @else
                                 <label for="badge btn-pimary">None</label>
                             @endif

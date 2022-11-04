@@ -10,7 +10,7 @@
         <img src="{{'ShopImage/' .  $item->storeImages}}"  style="width:600px; height:400px" class="rounded img-fluid">
 
     
-            <a type="submit" class="btn btn-success mt-2 mx-2" href="/products/create">Manage</a>
+            <a type="submit" class="btn btn-success text-dark bg-light mt-2 mx-2" href="/products/create">Manage</a>
    
     </div>
 
