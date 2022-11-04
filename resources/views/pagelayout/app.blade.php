@@ -21,14 +21,20 @@
 
     <link href="{{asset('build/assets/app.css')}}" rel="stylesheet" />
     <link rel="stylesheet" href="{{asset('css/style.css')}}" />
-
+    <script
+      src="https://kit.fontawesome.com/9a1cac315a.js"
+      crossorigin="anonymous"
+    ></script>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
   </head>
   <body>
     <div id="app">
-      <nav class="navbar navbar-expand-lg navbar-light d-flex flex-row justify-content-center">
+      <nav class="navbar navbar-expand-lg  d-flex flex-row justify-content-center">
         <div class="container">
-          <a class="navbar-brand" href="{{ url('/') }}"> Chanjo </a>
+          <a class="navbar-brand" href="{{ url('/') }}">
+          <img src="/Images/LOGO2.png" style="width: 50%" alt="">
+
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -48,7 +54,7 @@
                 <a class="nav-link " href="{{ url('/') }}">Home</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link " href="userproducts"
+                <a class="nav-link " href="userproducts/index"
                   >Products</a
                 >
               </li>
@@ -125,28 +131,16 @@
                   >
                     @csrf
                   </form>
+                  <a class="mx-3" href="/cart">
+                  cart
+                  </a>
                 </div>
+                
               </li>
+              
               @endguest
             </ul>
-              <a href="/cart">
-            <button
-          class="btn btn-sm btn-primary position-relative my-3 float-end order-lg-last"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasRight"
-          aria-controls="offcanvasRight"
-            >
-           <a href="/cart">
-          <i class="bi bi-cart3 fs-4 text-dark"></i>
-          <span
-            class="position-absolute start-99 translate-middle badge rounded-pill bg-danger"
-            style="top: 12px"
-            id="itemNumber"
-          >
-            0
-          </span>
-        </button>
-        </a>
+              
           </div>
         </div>
       </nav>
@@ -155,7 +149,7 @@
 
       <!-- Footer -->
 
-    <footer class="pt-3 text-primary bg-info">
+    <footer style="background-color: aquamarine" class="pt-3 text-primary  ">
       <div class="row g-0">
         <div
           class="col-md-3 col-12 text-center text-white order-2 ps-3 border-end border-dark"
@@ -244,7 +238,7 @@
             class="list-unstyled d-flex fs-2 gap-md-4 d-flex justify-content-center"
           >
             <li class="ms-3 text-center align-self-center text-dark">
-              <h4 class="d-none d-sm-block">FOLLOW US</h4>
+              <h4 class="d-none d-sm-block my-3">FOLLOW US</h4>
             </li>
             <li class="ms-3">
               <a class="text-dark" href="#"><i class="bi bi-instagram"></i></a>

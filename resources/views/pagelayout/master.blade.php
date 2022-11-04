@@ -87,8 +87,8 @@
             class="list-group-item list-group-item-action bg-transparent second-text active"
             ><i class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
 
-          <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
-            <i class="fas fa-chart-line me-2"></i>Analytics</a>
+          <a href="/admin/users" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+            <i class="fas fa-chart-line me-2"></i>User list</a>
           <a
             href="/reports"
             class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
