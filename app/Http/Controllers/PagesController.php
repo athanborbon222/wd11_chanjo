@@ -34,8 +34,14 @@ class PagesController extends Controller
      public function cart(){
         return view('pages.cart');
     }
+
+     public function checkout(){
+        return view('pages.checkout');
+    }
     
     public function contactus(){
         return view('pages.contactus');
     }
+
+
 }

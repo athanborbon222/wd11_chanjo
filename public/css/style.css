@@ -2,11 +2,13 @@
     background-color: aquamarine;
     box-shadow: 0px 2px 1px black;
 }
-.footer {
-    background-color: aquamarine;
-}
+
 .terms {
     box-sizing: border-box;
+}
+
+h5 {
+    text-shadow: 0px 3px 2px black;
 }
 
 .terms h2 {

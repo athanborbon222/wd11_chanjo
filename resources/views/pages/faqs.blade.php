@@ -11,7 +11,7 @@
       <div class="card w-100">
         <div style="background-color: #24a0ed" class="card-header">FAQS</div>
         <div class="card-body">
-          <h5 class="card-title">About us</h5>
+          <h4  class="card-title"> <strong> About us</strong></h4>
           <p class="card-text"></p>
           <ul>
             <b> How long have you been in business?</b>
@@ -33,7 +33,7 @@
       <div class="card w-100">
         <div style="background-color: #24a0ed" class="card-header">FAQS</div>
         <div class="card-body">
-          <h5 class="card-title">Shipping</h5>
+          <h4 class="card-title"> <strong>Shipping</strong> </h4>
           <p class="card-text"></p>
           <ul>
             <b> Where are your packages shipped from?</b>
@@ -56,7 +56,7 @@
       <div class="card w-100">
         <div style="background-color: #24a0ed" class="card-header">FAQS</div>
         <div class="card-body">
-          <h5 class="card-title">Payment methods</h5>
+          <h4 class="card-title">Payment methods</h4>
           <p class="card-text"></p>
           <ul>
             <b> What payment methods do you accept?</b>
@@ -83,7 +83,7 @@
       <div class="card w-100">
         <div style="background-color: #24a0ed" class="card-header">FAQS</div>
         <div class="card-body">
-          <h5 class="card-title">Delivery rider</h5>
+          <h4 class="card-title"> <strong>Delivery rider</strong> </h4>
           <p class="card-text"></p>
           <ul>
             <b> What are the requirements of a CH•AN•JO rider?</b>
