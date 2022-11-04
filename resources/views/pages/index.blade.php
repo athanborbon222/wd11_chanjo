@@ -2,6 +2,11 @@
 
 @section('pagecontent')
 
+    @if(session('status'))
+    <h5 class="alert alert-warning">{{session('status')}}</h5>
+    @endif
+
+
 <div class="conatiner">
     <div class="banner">
       <img src="./Images/Banner.png" alt=""  class="w-100"/>

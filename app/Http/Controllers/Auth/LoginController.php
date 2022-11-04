@@ -37,7 +37,7 @@ class LoginController extends Controller
         }
         else if (Auth::user()->role_as == '0')
         {
-            return redirect('/home')->with('status','Welcome To CHANJO');
+            return redirect('/')->with('status','Welcome To CHANJO');
         }
         else
         {

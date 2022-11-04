@@ -44,6 +44,21 @@ Route::controller(App\Http\Controllers\Admin\UserController::class)->group(funct
 });
    
 });
+
+
+
+Route::middleware(['auth'])->group(function(){
+
+Route::get('profile', [App\Http\Controllers\Frontend\UserProfileController::class, 'index']);
+Route::post('profile', [App\Http\Controllers\Frontend\UserProfileController::class, 'updateUserDetails']);
+});
+
+
+
+
+
+
+
 //navbar
 Route::get('/cart', [App\Http\Controllers\PagesController::class, 'cart']);
 Route::get('/contactus', [App\Http\Controllers\PagesController::class, 'contactus']);
