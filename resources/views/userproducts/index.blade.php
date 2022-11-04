@@ -16,10 +16,17 @@
     <div class="card-footer">
     <div class="my-1">
     <p class="my-1 me-1">Price: {{$proditem->productPrice}}</p>
-    <label>Quantity:</label>
-    <input type="number">
+
     </div>
+    
+    <div class="d-flex flex-row justify-content-between mt-2">
+
     <button class="btn btn-warning bg-white text-warning">Buy</button>
+
+    <button class="btn btn-danger bg-white text-danger">Add to cart</button>
+
+    </div>
+
     </div>
     </div>
 

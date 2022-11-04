@@ -71,8 +71,9 @@
                   type="text"
                   placeholder="What are you looking for?"
                 />
-                <button
-                  class="btn btn-sm btn-primary text-dark fw-semibold"
+                <button 
+                 
+                  class="btn btn-sm b text-dark fw-semibold SearchBtn"
                   type="button"
                 >
                   Search

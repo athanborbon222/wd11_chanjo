@@ -57,7 +57,7 @@
             {{Auth::user()->name}}</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><a class="dropdown-item" href="#">Settings</a></li>
+              
               <li> <a class="dropdown-item" href="{{ route('logout') }}"
                 onclick="event.preventDefault();
                               document.getElementById('logout-form').submit();">
@@ -83,17 +83,13 @@
         </div>
         <div class="list-group list-group-flush my-3">
           <a
-            href="#"
+            href="/admin/dashboard"
             class="list-group-item list-group-item-action bg-transparent second-text active"
             ><i class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
 
           <a href="/admin/users" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
             <i class="fas fa-chart-line me-2"></i>User list</a>
-          <a
-            href="/reports"
-            class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
-            ><i class="fas fa-paperclip me-2"></i>Reports</a
-          >
+         
           <a
             href="/StoreManagement"
             class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
@@ -104,11 +100,11 @@
             class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
             ><i class="fas fa-gift me-2"></i>Products</a
           >
-          {{-- <a
-            href=""
+          <a
+            href="{{ url('/') }}"
             class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
-            ><i class="fas fa-comment-dots me-2"></i>Contact Us</a
-          > --}}
+            ><i class="fas fa-comment-dots me-2"></i>View Page</a
+          >
 
           <a
             href="/ManagePage"
