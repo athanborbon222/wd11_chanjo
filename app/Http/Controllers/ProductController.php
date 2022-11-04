@@ -97,6 +97,14 @@ class ProductController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $product = Products::find($id);
+        $product->productName = $request->input('productName');
+        $product->productDescription = $request->input('productDescription');
+        $product->productPrice = $request->input('productPrice');
+
+        $product->update();
+        return redirect()->back()->with('status', 'Product Updated Successfully');
+
        
     }
 
