@@ -130,3 +130,7 @@ a {
     height: 50px;
     margin-top: -20px;
 }
+.SearchBtn {
+    background-color: aquamarine;
+    border: 2px solid rgb(0, 0, 0);
+}
