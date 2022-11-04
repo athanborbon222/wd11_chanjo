@@ -42,3 +42,7 @@ Route::post('/store-image', [StoreImageController::class, 'store'])->name('image
 Route::get('/StoreManagement', [StoreImageController::class, 'show'])->name('image.show');
 Route::get('/delete-image', [StoreImageController::class, 'delete'])->name('image.delete');
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
