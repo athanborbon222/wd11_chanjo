@@ -28,10 +28,5 @@ class StoreImageController extends Controller
         return view('admin.StoreManagement')->with('imageData', $imageData);
     }
 
-    public function delete($id)
-    {
-        //
-        Images::delete($id);
-        return redirect('admin.StoreManagement');
-    }
+    
 }

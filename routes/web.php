@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StoreImageController;
+use App\Http\Controllers\UserProductsController;
+use App\Http\Controllers\Admin\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,21 +30,59 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 //route  for admin middleware
 Route::prefix('admin')->middleware(['auth', 'isAdmin'])->group(function(){
-   Route::get('/dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index']);
+
+Route::get('/dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index']);
+   
+Route::controller(App\Http\Controllers\Admin\UserController::class)->group(function(){
+      Route::get('/users', 'index');
+});
    
 });
+//navbar
+Route::get('/cart', [App\Http\Controllers\PagesController::class, 'cart']);
+Route::get('/contactus', [App\Http\Controllers\PagesController::class, 'contactus']);
+// Route::get('/products', [App\Http\Controllers\PagesController::class, 'products']);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//sidebar
 Route::get('/product', [App\Http\Controllers\Admin\DashboardController::class, 'product']);
 Route::get('/StoreManagement', [App\Http\Controllers\Admin\DashboardController::class, 'StoreManagement']);
 Route::get('/ManagePage', [App\Http\Controllers\Admin\DashboardController::class, 'ManagePage']); 
 Route::get('/reports', [App\Http\Controllers\Admin\DashboardController::class, 'reports']);
- 
-//route for Store image (Robinson, Sm, SNR) 
+
+//footer
+Route::get('/aboutus', [App\Http\Controllers\PagesController::class, 'aboutus']);
+Route::get('/faqs', [App\Http\Controllers\PagesController::class, 'faqs']);
+Route::get('/products', [App\Http\Controllers\PagesController::class, 'products']);
+Route::get('/termsconditions', [App\Http\Controllers\PagesController::class, 'termsconditions']);
+Route::get('/privacypolicy', [App\Http\Controllers\PagesController::class, 'privacypolicy']);
+//route for Store imagproductsobinson, Sm, SNR) 
 Route::get('/add-image', [StoreImageController::class, 'create'])->name('image.add');
 Route::post('/store-image', [StoreImageController::class, 'store'])->name('image.store');
 Route::get('/StoreManagement', [StoreImageController::class, 'show'])->name('image.show');
-Route::get('/delete-image', [StoreImageController::class, 'delete'])->name('image.delete');
 
 
+<<<<<<< HEAD
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+=======
+
+
+Route::resource('products', 'App\Http\Controllers\ProductController');
+
+
+Route::get('/userproducts/index', [UserProductsController::class, 'show'])->name('userproducts.show');
+>>>>>>> 56bf1236d5fd5e63610f13994c58b7d551b6b926
