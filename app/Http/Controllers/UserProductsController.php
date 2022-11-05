@@ -8,9 +8,10 @@ use App\Models\Products;
 class UserProductsController extends Controller
 {
     // 
-    public function show(){
+    public function index(){
         $products = Products::all();
         return view('userproducts.index')->with('products', $products);
         
     }
+
 }
