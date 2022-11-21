@@ -16,17 +16,11 @@
     <div class="card-footer">
     <div class="my-1">
     <p class="my-1 me-1">Price: {{$proditem->productPrice}}</p>
-
     </div>
-    
-    <div class="d-flex flex-row justify-content-between mt-2">
-
+    <div class="d-flex flex-row justify-content-between">
     <button class="btn btn-warning bg-white text-warning">Buy</button>
-
-    <button class="btn btn-danger bg-white text-danger">Add to cart</button>
-
+    <button class="btn btn-danger bg-white text-danger">Add to Cart</button>
     </div>
-
     </div>
     </div>
 

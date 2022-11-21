@@ -102,4 +102,4 @@ Route::get('/StoreManagement', [StoreImageController::class, 'show'])->name('ima
 Route::resource('products', 'App\Http\Controllers\ProductController');
 
 
-Route::get('/userproducts/index', [UserProductsController::class, 'show'])->name('userproducts.show');
+Route::get('/userproducts/index', [UserProductsController::class, 'index'])->name('userproducts.index');

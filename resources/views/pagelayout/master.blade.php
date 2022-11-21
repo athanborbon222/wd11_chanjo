@@ -18,7 +18,7 @@
     />
 
     <!-- Scripts -->
-   <link  href="{{asset('build/assets/app.css')}}" rel="stylesheet" >
+   <link  href="{{secure_asset('build/assets/app.css')}}" rel="stylesheet" >
    
      <link rel="stylesheet" href="{{asset('css/master.css')}}"/>
 
@@ -116,6 +116,7 @@
       <!-- /#sidebar-wrapper -->
 
       <!-- Page Content -->
+      
       <div class="container-fluid">
   
      @yield('content')

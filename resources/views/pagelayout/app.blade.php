@@ -19,13 +19,13 @@
 
     <!-- Scripts -->
 
-    <link href="{{asset('build/assets/app.css')}}" rel="stylesheet" />
+    <link href="{{secure_asset('build/assets/app.css')}}" rel="stylesheet" />
     <link rel="stylesheet" href="{{asset('css/style.css')}}" />
     <script
       src="https://kit.fontawesome.com/9a1cac315a.js"
       crossorigin="anonymous"
     ></script>
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    {{-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) --}}
   </head>
   <body>
     <div id="app">
@@ -59,8 +59,8 @@
                 >
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link " href="/contactus"
-                  >Contact Us</a
+                <a class="nav-link " href="/aboutus"
+                  >About Us</a
                 >
               </li>
             </ul>
@@ -146,7 +146,7 @@
           </div>
         </div>
       </nav>
-
+      
       <div>@yield('pagecontent')</div>
 
       <!-- Footer -->
