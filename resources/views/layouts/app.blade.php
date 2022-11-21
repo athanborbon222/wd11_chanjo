@@ -15,7 +15,7 @@
 
     <!-- Scripts -->
     <link href="{{secure_asset('build/assets/app.css')}}" rel="stylesheet" />
-    <script src="{{secure_asset('build/assets/app.css')}}"></script>
+  
     {{-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) --}}
 </head>
 <body>

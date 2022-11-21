@@ -146,7 +146,7 @@
           </div>
         </div>
       </nav>
-
+      <script src="{{secure_asset('build/assets/app.js')}}"></script>
       <div>@yield('pagecontent')</div>
 
       <!-- Footer -->
