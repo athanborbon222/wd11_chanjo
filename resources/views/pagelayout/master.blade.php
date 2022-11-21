@@ -116,7 +116,7 @@
       <!-- /#sidebar-wrapper -->
 
       <!-- Page Content -->
-      <script src="{{secure_asset('build/assets/app.js')}}"></script>
+      
       <div class="container-fluid">
   
      @yield('content')
